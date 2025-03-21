@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* o que sabemos sobre formaçao de texto
+-cor{color]
+-tipos de fontes{font-family)
+-tamanho de fonte(font-seze)
+-margem de texto(margin)
+-espaçamento  (padding)
+  */
+
+:root {
+    --ferlinda: #ff9671;
+    --amgetd: #ba5e3a;
+    --amor: #c34a36;
+    --rick: #fefedf;
+
+}
+
+* {
+    margin: 0;
+    /* a margem normal */
+    padding: 0;
+    /* distacia de um para com o outro */
+    box-sizing: border-box;
+    /* o box, o quadro */
+    font-family: 'Courier New', Courier, monospace;
+    /* a fonte que é familiar pra todos */
+}
+
+html {
+    height: 100vh;
+    background-color: #72d3d7;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+body{
+    background-image: linear-gradient(to top,var(--rick) var(--amgetd));
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+color: var(--amgetd);
+font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: var(--ferlinda);
+    height: 10vh;
+    margin: auto;
+    color: var(--rick);
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+    padding: 0.9em;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+h3{
+    text-align: center;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+
+h4{
+    text-align: center;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+menu{
+    background-color:var(--amgetd) ;
+    height: 10vh;
+    margin: auto;
+    padding: 0.5;
+    color: var(--rick);
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+}
+
+section{
+    background-color: var(--rick);
+    height:auto;
+    margin: cover ;
+    text-align: justify;
+   
+}
+
+footer{
+    background-color: var(--ferlinda);
+    height: 5vh;
+    margin: auto;
+    padding: 0.5;
+    color: var(--amgetd);
+    text-align: center;
+}
+
+button{
+    color: #f5f5dc;
+    background-color: #ffe4c4;
+    width: 100px;
+    margin: 5px;
+    padding: 2,5px;
+}
+
+img{
+    border-radius: 8px;
+    object-fit: cover;
+    height: 300px;
+    float: right;
+}

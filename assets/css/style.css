@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* o que sabemos sobre formaçao de texto
+-cor{color]
+-tipos de fontes{font-family)
+-tamanho de fonte(font-seze)
+-margem de texto(margin)
+-espaçamento  (padding)
+  */
+
+:root {
+    --ferlinda: #ff9671;
+    --amgetd: #ba5e3a;
+    --amor: #c34a36;
+    --rick: #fefedf;
+
+}
+
+* {
+    margin: 0;
+    /* a margem normal */
+    padding: 0;
+    /* distacia de um para com o outro */
+    box-sizing: border-box;
+    /* o box, o quadro */
+    font-family: 'Courier New', Courier, monospace;
+    /* a fonte que é familiar pra todos */
+}
+
+html {
+    height: 100vh;
+    background-color: var(--rick);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+body{
+    background-image: linear-gradient(to top,var(--rick), var(--amgetd));
+    background-repeat: repeat;
+    background-attachment:fixed;
+
+color: var(--amgetd);
+font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: var(--ferlinda);
+    height:auto;
+    margin: auto;
+    color: var(--rick);
+    text-align: center;
+}
+
+
+h1{
+    text-align:center;
+    padding: 0.9em;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+h3{
+    text-align:left;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+
+h4{
+    text-align:left;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+menu{
+    background-color:var(--amgetd) ;
+    height: 10vh;
+    margin: auto;
+    padding: 0.5;
+    color: var(--rick);
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+}
+
+section{
+    background-color: var(--rick);
+    height:auto;
+    margin: 0 auto ;
+    padding: 20px;
+    text-align: justify;
+   
+}
+
+footer{
+    background-color: var(--ferlinda);
+    height: 5vh;
+    margin: auto;
+    padding:0.5;
+    color: var(--amgetd);
+    text-align: center;
+}
+
+button{
+    color: var(--rick);
+    background-color: var(--rick);
+    width: 100px;
+    margin: 5px;
+    padding: 2,5px;
+}
+
+img{
+    border-radius: 20px;
+    object-fit: cover;
+    height: 50px;
+}
+
+.galeria-vertical img {
+  max-width: 100%; 
+  height: 200px; 
+  display: block; 
+  margin: 0 auto;
+}
+
+
+p{
+   text-align:left;
+    padding: 0.3em;
+    text-transform: uppercase  
+}
+.galeria-vertical{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+}
+.corpo-de-texto{
+    display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 30px; 
+  padding: 20px;
+
+}
+
+.corpo-de-texto article{
+     flex: 1; 
+  min-width: 300px; 
+  max-width: 500px; 
+  padding: 15px;
+  background-color: var(--rick);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
